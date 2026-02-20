@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ESlam Book</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+	<div class="container eslambook">
+		<h2 id="eslam-book-title">ESlam Book</h2>
+		<p id="intro-text" class="intro"></p>
+		<hr>
+		<form action="#" id="eslambook-form">
+			<div class="form-group">
+				<label>My Name: </label>
+				<input type="text" name="name" id="name">
+			</div>
+			<div class="form-group">
+				<label>You Can Call Me: </label>
+				<input type="text" name="nickname" id="nickname">
+			</div>
+			<div class="form-group">
+				<label>My Sweet Home:</label>
+				<input type="text" name="home" id="home">
+			</div>
+			<div class="form-group">
+				<label>Ring Me: </label>
+				<input type="text" name="phone" id="phone">
+			</div>
+			<div class="form-group">
+				<label>This is email: </label>
+				<input type="text" name="mail" id="mail">
+			</div>
+			<div class="form-group">
+				<label>The Day I was Born: </label>
+				<input type="text" name="born" id="born">
+			</div>
+			<div class="form-group">
+				<label>Boy/Girl i like that most & why: </label>
+				<input type="text" name="like" id="like">
+			</div>
+			<div class="form-group">
+				<label>My Biggest Strength: </label>
+				<input type="text" name="strength" id="strength">
+			</div>
+			<div class="form-group">
+				<label>My Most Memorable Moment: </label>
+				<input type="text" name="memories" id="memories">
+			</div>
+			<div class="form-group">
+				<label>I Love wearning: </label>
+				<input type="text" name="dress" id="dress">
+			</div>
+			<div class="form-group">
+				<label>My Favourite Dish: </label>
+				<input type="text" name="dish" id="dish">
+			</div>
+			<div class="form-group">
+				<label>My Favourite Color: </label>
+				<input type="text" name="color" id="color">
+			</div>
+			<div class="form-group">
+				<label>My Favourite Book:</label>
+				<input type="text" name="movie" id="movie">
+			</div>
+			<div class="form-group">
+				<label>My Favourite Actor: </label>
+				<input type="text" name="actor" id="actor">
+			</div>
+			<div class="form-group">
+				<label>My Favourite Actress: </label>
+				<input type="text" name="actress" id="actress">
+			</div>
+			<div class="form-group">
+				<label>I'm Crazy about: </label>
+				<input type="text" name="crazy" id="crazy">
+			</div>
+			<div class="form-group">
+				<label>Most Embrassing Momemnt: </label>
+				<input type="text" name="moment" id="moment">
+			</div>
+			<div class="form-group">
+				<label>What bores me most: </label>
+				<input type="text" name="bore" id="bore">
+			</div>
+			<div class="form-group">
+				<label>My Ambition: </label>
+				<input type="text" name="ambition" id="ambition">
+			</div>
+			<div class="form-group">
+				<label>Holiday Spot:</label>
+				<input type="text" name="trip" id="trip">
+			</div>
+			<div class="form-group">
+				<label>Your Best Friends: </label>
+				<input type="text" name="friend" id="friend">
+			</div>
+			<div class="form-group">
+				<label>Did You Like Me...&nbsp; If (Yes/No) why ? </label>
+				<input type="text" name="likeme" id="likeme">
+			</div>
+			<div class="form-group">
+				<label>Something Tell about me: </label>
+				<input type="text" name="aboutme" id="aboutme">
+			</div>
+			<div class="form-group">
+				<label>Favourite Quatation: </label>
+				<input type="text" name="quote" id="quote">
+			</div>
+			<div class="form-group">
+				<label>Date : </label>
+				<input type="text" name="date" id="date">
+			</div>
+			<div class="form-group">
+				<label>My Signature : </label>
+				<input type="text" name="sign" id="sign">
+			</div>
+			<span id="error-message" style="color:rgb(173, 10, 10); display:none;"></span>
+			<span id="success-message"></span>
+			<div class="button-group">
+				<button type="submit" class="btn btn-primary" name="submit"> Submit </button>
+				<button type="reset" class="btn btn-danger" name="reset"> Reset </button>
+			</div>
+			
+
+			<hr>
+			<div class="footer">
+				<footer>
+					<small>
+						&copy;
+						<script type="text/javascript">
+							document.write(new Date().getFullYear());
+						</script>
+						UK Creations Pvt Ltd . All Rights Reserved.
+					</small>
+				</footer>
+			</div>
+		</form>
+	</div>
+	<!-- Loading Overlay -->
+		<div id="loader" class="loader-overlay">
+		<div class="spinner"></div>
+		</div>
+
+		<!-- Success Modal -->
+		<div id="successModal" class="modal">
+		<div class="modal-content animate">
+			<h2>🎉 Thank You!</h2>
+			<p style="color: green;">Your ESlam Book entry has been submitted successfully.</p>
+		</div>
+		</div>
+
+	<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Rubik+Wet+Paint&display=swap');
+body{
+    margin:0px;
+    padding:0px;
+    background-color:#ffffff; 
+}
+.eslambook{
+    background-color:#006666;
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    color: white
+}
+#eslam-book-title {
+    font-family: "Rubik Wet Paint", system-ui;
+    font-size: 45px;
+    color: #daa107;
+    text-align: center;
+    
+}
+.intro{
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    color:#f0f8f8
+}
+.form-group{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+/*lablel width 120px and right align*/
+.form-group label{
+    width:220px;
+    margin-right: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color:#FFD700;
+}
+.form-group input{
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 2px solid #ffffff;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+ 
+}
+.form-group input:focus{
+    outline: none;
+    border-bottom: 2px solid #FFFF00;
+}
+.button-group{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}   
+.button-group button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+.button-group .btn-primary{
+    background-color: hsl(211, 100%, 50%);
+    color: white;
+}
+.button-group .btn-primary:hover{
+    background-color: hsl(211, 100%, 40%);
+}   
+.button-group .btn-danger{
+    background-color: #dc3545;
+    color: white;
+}
+.button-group .btn-danger:hover{
+    background-color: #c82333;
+}   
+.footer{
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color:whitesmoke;   
+}
+
+/* Loader */
+.loader-overlay {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background: #fff;
+  width: 350px;
+  margin: 15% auto;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  transform: scale(0.7);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-content.animate {
+  transform: scale(1);
+  opacity: 1;
+}
